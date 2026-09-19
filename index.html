@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Practice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="home-screen" class="screen">
+        <div class="content-wrapper">
+            <h1>Group Discussion</h1>
+            <p class="subtitle">Topic Generator & Timer</p>
+            
+            <div id="generating-animation" class="hidden">
+                <span id="random-number-display">0</span>
+            </div>
+            
+            <button id="generate-btn" class="primary-btn">Generate Topic</button>
+        </div>
+    </div>
+
+    <div id="topic-screen" class="screen hidden">
+        <div class="card-container">
+            <div class="card" id="topic-card">
+                <div class="card-header">
+                    <div class="card-number" id="card-number">Card #</div>
+                </div>
+                <div class="card-topic" id="card-topic">Topic goes here</div>
+            </div>
+        </div>
+        
+        <div class="timer-section">
+            <div class="timer-controls">
+                <input type="number" id="time-input" placeholder="Minutes" min="1" max="60">
+                <button id="start-timer-btn" class="success-btn">Start Timer</button>
+            </div>
+            <div id="timer-display">00:00</div>
+        </div>
+        
+        <button id="home-btn" class="secondary-btn">Back to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
